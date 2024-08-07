@@ -7,6 +7,9 @@ public class ATM {
     private ArrayList<Account> accounts = new ArrayList<Account>();
     Scanner sc= new Scanner(System.in);
 
+    public ATM() {
+
+    }
     public void start(){
         System.out.println("welelcome to ATM System");
         System.out.println("1.user login");

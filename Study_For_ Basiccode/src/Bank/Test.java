@@ -1,6 +1,11 @@
 package Bank;
 
 public class Test {
-    ATM atm = new ATM();
+    public static void main(String[] args) {
+        ATM atm = new ATM();
+
+        atm.start();
+    }
+
 
 }
