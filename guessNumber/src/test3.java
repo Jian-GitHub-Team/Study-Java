@@ -8,8 +8,9 @@ public class test3 {
         int a = r.nextInt(1,101);
         //System.out.println(a);
         Scanner sc = new Scanner(System.in);
-        int b = sc.nextInt();
+        int b;// = sc.nextInt();
         while (true) {
+            b = sc.nextInt();
             if (b > a){
                 System.out.println("bigger");
             } else if (b <a ) {
