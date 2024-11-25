@@ -30,6 +30,7 @@ public class CodeExercises {
 		if (num < 0) {
 			System.out.println("invalid number");
 		} else {
+			// FIXME Logic
 			for (int i = 0; i < num / 26; i++) {
 				columnName += (char) (65 + num % 26);
 			}
@@ -53,6 +54,7 @@ public class CodeExercises {
 			return false; //字符为空返回false
 		} else {
 			for (int i = 0; i < (str.length() - 1) / 2; i++) {
+				// FIXME Logic
 				if (str.charAt(i) == str.charAt(str.length() - 1 - i)) {
 					return true;
 				}
