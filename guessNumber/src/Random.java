@@ -2,16 +2,21 @@ import java.util.Scanner;
 
 public class Random {
     public static void main(String[] args) {
-        int[] numbers = {10,20,30,40,50};
-        int temp = 0;
-        for (int i = 0, j = numbers.length-1; i < j; i++, j--) {
-            temp = numbers[i];
-            numbers[i] = numbers[j];
-            numbers[j] = temp;
+    int[] num = new int[5];
+    Scanner sc = new Scanner(System.in);
+    java.util.Random r = new java.util.Random();
+    for (int i = 0; i < num.length; i++) {
+        num[i] = sc.nextInt();
+    }
+    int tem = 0;
+    for (int i = 0; i < num.length; i++) {
+        tem = num[i];
+        num[i] = num[r.nextInt(5)];
+        num[r.nextInt(5)] = tem;
+    }
 
-        }
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i]);
+        for (int i = 0; i < num.length; i++) {
+            System.out.print(num[i]);
         }
 
     }
