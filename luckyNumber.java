@@ -9,7 +9,7 @@ public class luckyNumber {
         int[] luckyNumber = randomNumber();
         printArray(luckyNumber);
 
-        judge(luckyNumber,randomNumber());
+        judge(userNumber, luckyNumber);
     }
 
     public static void printArray(int[] numbers) {
